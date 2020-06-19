@@ -107,7 +107,26 @@ DAEMON: 是否是daemon线程
 
 ![](..\arthas\images\1-12.png)
 
-#### logs
+#### logger
+
+~~~
+获取classloaderHash值
+logger -n com.gs.systemmanager.controller
+
+根据classloaderHash查看日志信息
+logger -c [classloaderHash]
+~~~
+
+#### monitor
+
+~~~
+10 标识监听次数
+com.gs.systemmanager.controller package地址
+getAllUserInfo  方法名
+monitor -c 10  com.gs.systemmanager.controller getAllUserInfo
+~~~
+
+
 
 #### help
 
