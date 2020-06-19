@@ -22,7 +22,7 @@
 
 内容模块如下:
 
-![Contents](..\arthas\1-1.png)
+![Contents](..\arthas\images\1.png)
 
 
 
@@ -36,15 +36,15 @@
 
 3：win+r输入cmd命令 进入到业务服务JAR包位置（建议和arthas-boot.jar包放在同一个目录位置），同时检查Java的环境是否具备(如果不具备需要安装Java的环境以及配置环境变量)，如图：
 
-![](..\arthas\1-3.png)
+![](..\arthas\images\1-3.png)
 
-![](..\arthas\1-2.png)
+![](..\arthas\images\1-2.png)
 
 
 
 4：启动业务服务  java -jar cad-attach-backend-3.0.3-SNAPSHOT.jar,如图
 
-![](..\arthas\1-4.png)
+![](..\arthas\images\1-4.png)
 
 服务启动完成后，在本地浏览器检查服务的swagger地址是不是能够正常访问
 
@@ -52,15 +52,15 @@
 
 5：win+r 输入cmd然后进入到arthas-boot.jar包位置（建议和业务服务放在同一个目录位置），输入java -jar arthas-boot.jar命令，如图：
 
-![](..\arthas\1-5.png)
+![](..\arthas\images\1-5.png)
 
 这个时候就可以看到我们第四步操作启动的附件服务，输入1，<font color=red>这里注意选中后需要有外网条件，会从阿里服务器下载相应文件</font>
 
-![](..\arthas\1-6.png)
+![](..\arthas\images\1-6.png)
 
 这里在arthas上进入到附件服务的诊断目录下，根据上面提供的端口信息(已经测试上面3658和8563二个端口都可以访问，并且是指向同一个进程ID)，可以访问地址如图：
 
-![](..\arthas\1-7.png)
+![](..\arthas\images\1-7.png)
 
 
 
@@ -72,7 +72,7 @@
 
 1：trace跟踪主要是跟踪目前服务中具体的方法
 
-![](..\arthas\1-8.png)
+![](..\arthas\images\1-8.png)
 
 1. --skipJDKMethod false  是否跳过JDK内部方法 false不跳过  true标识跳过
 2. com.gsafety.cad.attach.service.serviceimpl.AttachServiceImpl 是类AttachServiceImpl的package路径位置
@@ -82,7 +82,7 @@
 
 显示当前所有的线程信息,如图:
 
-![](..\arthas\1-10.png)
+![](..\arthas\images\1-10.png)
 
 ```ruby
 说明
@@ -101,11 +101,11 @@ DAEMON: 是否是daemon线程
 
 查看具体线程ID的内容，如图:
 
-![](..\arthas\1-11.png)
+![](..\arthas\images\1-11.png)
 
 #### watch
 
-![](..\arthas\1-12.png)
+![](..\arthas\images\1-12.png)
 
 #### logs
 
@@ -115,7 +115,7 @@ DAEMON: 是否是daemon线程
 
 是使用命令的历史记录，如图；
 
-![](..\arthas\1-9.png)
+![](..\arthas\images\1-9.png)
 
 
 
