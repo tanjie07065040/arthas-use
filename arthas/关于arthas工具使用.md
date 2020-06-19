@@ -130,6 +130,9 @@ monitor -c 10  com.gs.systemmanager.controller getAllUserInfo
 
 #### help
 
+1. 帮助命令  help 可以查看所有的命令
+2. 查看具体命令的使用   比如：trace -help 
+
 #### history
 
 是使用命令的历史记录，如图；
