@@ -113,6 +113,15 @@ INTERRUPTED: 线程当前的中断位状态
 DAEMON: 是否是daemon线程
 
 通过上述信息，可以帮助我们快速定位相关问题线程。
+
+thread ID
+注意， 目前只支持找出synchronized关键字阻塞住的线程， 如果是java.util.concurrent.Lock， 目前还不支持。
+
+thread -n ID -i 1000
+-i 1000 间隔1S采样
+
+thread --state WAITING/RUNNABLE
+过滤线程状态
 ```
 
 查看具体线程ID的内容，如图:
