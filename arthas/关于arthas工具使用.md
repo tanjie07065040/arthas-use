@@ -68,6 +68,22 @@
 
 #### dashboard
 
+![](..\arthas\images\1-15.bmp)
+
+ID是Java 内部线程ID
+
+Name 线程名
+
+GROUP 所属组 系统级别和程序级别
+
+PRIORITY  权限
+
+STATE 线程状态
+
+%CPU  CPU占比
+
+TIME 时间
+
 #### tarce
 
 1：trace跟踪主要是跟踪目前服务中具体的方法
