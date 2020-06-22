@@ -105,7 +105,17 @@ DAEMON: 是否是daemon线程
 
 #### watch
 
+1. com.gsafety.cad.attach.service.serviceimpl 是package路径
+2. AttachServiceImpl 是类名
+3. batchUpload 是类中具体的方法名
+
 ![](..\arthas\images\1-12.png)
+
+![](..\arthas\images\1-13.bmp)
+
+![](..\arthas\images\1-14.bmp)
+
+上面的方法被调用后如上是一个get方法，可以显示查询消耗时间以及查询数据Size
 
 #### logger
 
